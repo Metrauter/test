@@ -2,15 +2,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.IOException;
+
 public class FirstSeleniumTest {
 
-    static String browser;
+    public static String browser;
     static WebDriver driver;
 
-    public static void main(String[] args) {
-        setBrowser();
+    public static void main(String[] args) throws IOException {
+        //setBrowser();
+        PropertiesFile.readPropertiesFile();
         setBrowserConfig();
         runTest();
+        PropertiesFile.writePropertiesFile();
     }
 
     public static void setBrowser() {
