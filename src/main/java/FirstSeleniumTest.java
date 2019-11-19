@@ -1,3 +1,5 @@
+package src.main.java;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -36,7 +38,7 @@ public class FirstSeleniumTest {
     }
 
     public static void runTest() {
-        driver.get("http://zk.fm");
+        driver.get("https://translate.google.com/");
         driver.quit();
     }
 }
