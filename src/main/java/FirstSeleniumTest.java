@@ -1,8 +1,7 @@
-package src.main.java;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.io.IOException;
 
@@ -34,6 +33,11 @@ public class FirstSeleniumTest {
         if (browser.contains("Chrome")) {
             System.setProperty("webdriver.chrome.driver", projectLocation + "\\lib\\chromedriver\\chromedriver.exe");
             driver = new ChromeDriver();
+        }
+
+        if (browser.contains("IE")) {
+            System.setProperty("webdriver.ie.driver", projectLocation + "\\lib\\iedriver\\IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
         }
     }
 
