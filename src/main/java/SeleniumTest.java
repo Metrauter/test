@@ -1,10 +1,13 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import java.util.List;
 
 public class SeleniumTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 //        WebDriverManager.chromedriver().setup();
 //        WebDriverManager.firefoxdriver().setup();
@@ -13,12 +16,22 @@ public class SeleniumTest {
 //        WebDriverManager.edgedriver().setup();
 //        WebDriverManager.iedriver().setup();
 
-        WebDriverManager.iedriver().setup();
-        WebDriver driver = new InternetExplorerDriver();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 
-        driver.get("https://selenium.dev");
+        driver.get("http://google.com");
+        //WebElement textBox = driver.findElement(By.name("q"));
+        //textBox.sendKeys("text");
+
+        List<WebElement> listOfElements = driver.findElements(By.xpath("//input"));
+        int count = listOfElements.size();
+        System.out.println("Count of Input elements : " + count);
+
+
+        Thread.sleep(3000);
+
         driver.close();
-        driver.quit();
+        //driver.quit();
 
     }
 }
