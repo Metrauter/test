@@ -2,7 +2,6 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.GoogleSearchPage;
 import pages.GoogleSearchPageObjects;
 
 public class GoggleSearchPageTest {
@@ -15,7 +14,7 @@ public class GoggleSearchPageTest {
 
     }
 
-    public static void googleSearchTest(){
+    public static void googleSearchTest() {
 
         String projectLocation = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", projectLocation + "\\lib\\chromedriver\\chromedriver.exe");

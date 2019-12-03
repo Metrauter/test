@@ -2,7 +2,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ public class SeleniumTest {
 //        WebDriverManager.edgedriver().setup();
 //        WebDriverManager.iedriver().setup();
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        WebDriver driver = new FirefoxDriver();
 
         driver.get("http://google.com");
         //WebElement textBox = driver.findElement(By.name("q"));

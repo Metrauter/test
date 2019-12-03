@@ -8,13 +8,13 @@ public class GoogleSearchPage {
 
     private static WebElement element = null;
 
-    public static WebElement textbox_search(WebDriver driver){
+    public static WebElement textbox_search(WebDriver driver) {
 
         element = driver.findElement(By.name("q"));
         return element;
     }
 
-    public static WebElement button_search(WebDriver driver){
+    public static WebElement button_search(WebDriver driver) {
 
         element = driver.findElement(By.name("btnK"));
         return element;

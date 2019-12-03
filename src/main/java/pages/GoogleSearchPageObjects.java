@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 
 public class GoogleSearchPageObjects {
 
-    WebDriver driver = null;
+    private static WebDriver driver = null;
 
     By textbox_search = By.name("q");
-    By button_search = By.name("btnK");
+    By button_search = By.name("q");
 
     public GoogleSearchPageObjects(WebDriver driver) {
         this.driver = driver;
