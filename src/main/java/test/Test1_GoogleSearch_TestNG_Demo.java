@@ -26,7 +26,6 @@ public class Test1_GoogleSearch_TestNG_Demo {
 
         driver.get("https://google.com");
         driver.findElement(By.name("q")).sendKeys("Automation");
-        //driver.findElement(By.name("btnI")).click();
         driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 
     }
