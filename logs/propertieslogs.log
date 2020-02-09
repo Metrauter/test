@@ -1,0 +1,9 @@
+[INFO ] 2020-02-09 23:25:59.546 [main] Log4jDemo - This is information massage
+[ERROR] 2020-02-09 23:25:59.549 [main] Log4jDemo - This is an error message
+[WARN ] 2020-02-09 23:25:59.550 [main] Log4jDemo - This is a warning message
+[FATAL] 2020-02-09 23:25:59.550 [main] Log4jDemo - This is fatal message
+[TRACE] 2020-02-09 23:29:54.966 [main] Log4jDemo - This is trace message
+[INFO ] 2020-02-09 23:29:54.970 [main] Log4jDemo - This is information massage
+[ERROR] 2020-02-09 23:29:54.970 [main] Log4jDemo - This is an error message
+[WARN ] 2020-02-09 23:29:54.970 [main] Log4jDemo - This is a warning message
+[FATAL] 2020-02-09 23:29:54.976 [main] Log4jDemo - This is fatal message
