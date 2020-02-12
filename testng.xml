@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="E:/test/src/main/java/test/Test1_GoogleSearch_TestNG_Demo.java">
+    <listeners>
+        <listener class-name="listeners.TestNGListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="E:/test/src/main/java/listeners/TestNGListenerDemo.java">
         <classes>
-            <class name="test.Test1_GoogleSearch_TestNG_Demo">
-                <methods>
-                    <include name="googleSearch"/>
-                </methods>
-            </class>
+            <class name="listeners.TestNGListenerDemo"/>
+            <class name="listeners.TestNGListenerDemo2"/>
         </classes>
     </test>
 </suite>
