@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <listeners>
-        <listener class-name="listeners.TestNGListeners"></listener>
-    </listeners>
-    <test verbose="2" preserve-order="true" name="E:/test/src/main/java/listeners/TestNGListenerDemo.java">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <test verbose="2" preserve-order="true" name="chrome">
+        <parameter name="browserName" value="chrome"></parameter>
         <classes>
-            <class name="listeners.TestNGListenerDemo"/>
-            <class name="listeners.TestNGListenerDemo2"/>
+            <class name="demo.TestNGMultiBrowserDemo">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="firefox">
+        <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="demo.TestNGMultiBrowserDemo">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="ie">
+        <parameter name="browserName" value="ie"></parameter>
+        <classes>
+            <class name="demo.TestNGMultiBrowserDemo">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
