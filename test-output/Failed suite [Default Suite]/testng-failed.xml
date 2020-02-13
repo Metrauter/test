@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Default Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test(failed)(failed)">
+    <classes>
+      <class name="demo.TestNGRetryFailedDemo">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- demo.TestNGRetryFailedDemo -->
+    </classes>
+  </test> <!-- test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default Suite]] -->
