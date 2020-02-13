@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="test(failed)">
     <classes>
-      <class name="demo.TestNGRetryFailedDemo">
+      <class name="demo.AutoITDemo">
         <methods>
-          <include name="test3"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- demo.TestNGRetryFailedDemo -->
+      </class> <!-- demo.AutoITDemo -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
